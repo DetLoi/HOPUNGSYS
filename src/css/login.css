@@ -1,0 +1,45 @@
+.login{
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+ }
+
+.login h2{
+    margin: 0 0 30px 0;
+    color: var(--light-text-color)
+}
+.login-content{
+    display: flex;
+    flex-direction: column;
+}
+.login-item{
+    background-color: var(--light-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: var(--text-shadow);
+    cursor: pointer;
+    
+}
+.login-img-container{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+.kommune{
+    width: 150px;
+}
+.ungsys{
+    height: 50px;
+}
+.aula{
+    width: 150px;
+}

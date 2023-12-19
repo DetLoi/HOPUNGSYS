@@ -1,0 +1,283 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15% 20px 15%;
+    background-color: var(--light-background-color);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.logo-btn{
+    height: 0;
+}
+.logo {
+    width: 70px;
+    height: auto; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .logo:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+  }
+
+
+.nav_links {
+    list-style: none;
+    display: flex; 
+    align-items: center;
+    gap: 20px; 
+}
+
+.nav_links li a {
+    color: var(--text-color);
+}
+
+.nav_links li a:hover {
+    color: var(--primary-color);
+}
+.nav-btn{
+    background-color: transparent;
+    box-shadow:none;
+    visibility: hidden;
+    opacity: 0;
+    border: none;
+    display: none;
+}
+.nav-btn:hover{
+    background-color: transparent;
+    border: none;
+    transform: none;
+}
+.nav-btn svg{
+    fill: var(--text-color);
+}
+.nav-close-btn svg{
+    fill: var(--secondary-color);
+    width: 20px;
+    height: 20px;
+}
+.nav-open-btn svg{
+
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.CTA-btns{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.findhold-btn{
+    margin-right:20px;
+    list-style: none;
+}
+.findhold-btn-innav{
+    margin-right: 20px;
+}
+.dropdown-btn {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 70px;
+    right: -50px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    min-width: 150px;
+    min-height: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 20px;
+    gap: 20px;
+    z-index: 1;
+
+  }
+  .white-text {
+   color: var(--white);
+  }
+  
+  /* Dropdown item style */
+  .dropdown-item {
+    background-color: var(--light-background-color);
+    border-radius: 9px;
+    box-shadow: var(--text-shadow);
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 24px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  .dropdown-item:hover {
+    transform: scale(1.1)
+  }
+
+
+  .dropdown-item .ungsysimg {
+    width: 120px; /* Adjust image size */
+
+  }
+  .dropdown-item .kommuneimg {
+    width: 80px; /* Adjust image size */
+
+  }
+  .dropdown-item img {
+    width: 40px; /* Adjust image size */
+    margin-bottom: 10px;
+  }
+  
+  .dropdown-item span {
+    font-size: 14px;
+  }
+  .login-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Show the dropdown content when the dropdown button is clicked */
+
+
+
+@media(max-width: 1024px) {
+    .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 16px 10px 16px;
+    background-color: var(--light-background-color);
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    }
+    .logo {
+        width: 90px;
+        height: auto; 
+        transition: transform 0.3s ease; 
+    }
+      
+    .logo:hover {
+        cursor: pointer;
+        transform: scale(1.1); 
+    }
+    .nav-btn{
+        visibility: visible;
+        opacity: 1;
+        display: block;
+
+    }
+    .header-nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        border-left: 1px solid var(--secondary-color);
+        border-bottom: 1px solid var(--secondary-color);            
+        background-color: var(--light-background-color);
+        transition: 1s;
+        transform: translateX(100vh);
+        padding-top: 100px;
+        padding-bottom: 30px;
+        padding-left: 30px ;
+        border-radius: 0 0 0px 60px;
+        z-index: 1000;
+    }
+    .nav_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: end;
+        left: 0;
+    }
+    .nav_links li a{
+        color: var(--text-color);
+        font-size: var(--h4-size);
+    }
+    .nav_links li{
+        padding-right: 2.8rem;
+    }
+    .responsive_nav{
+        transform: none;
+    }
+    .nav-close-btn{
+        position: absolute;
+        top: 2rem;
+        right: 1.8rem;
+    }
+    .CTA-btns{
+        padding-top: 16px;
+        display: flex;
+    }
+    .findhold-btn-innav button{
+        font-size: 18px;
+    }
+    .findhold-btn button{
+        font-size: 18px;
+    }
+    .findhold-btn{
+        margin-top: 6px;
+    }
+    .button_second{
+        font-size: var(--button-font-size);
+    }
+    .button-and-bars{
+        display: flex;
+    }
+    
+}
+@media only screen and (max-width: 540px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 8px 8px 8px;
+        background-color: var(--light-background-color);
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        }
+    .findhold-btn .button_second{
+        display: none;
+    }
+    .findhold-btn{
+        margin-right: 0;
+        list-style: none;
+    }
+    .findhold-btn-innav button{
+        font-size: 18px;
+    }
+    .nav_links li a{
+        font-size: var(--h5-size);
+    }
+  }
+  @media only screen and (max-width: 350px) {
+    .findhold-btn button{
+        margin-top: 8px;
+        font-size: var(--h5-size);
+    }
+    .findhold-btn{
+        margin: 0;
+    }
+    .nav_links li a{
+        font-size: var(--h5-size);
+    }
+  }

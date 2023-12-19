@@ -1,0 +1,445 @@
+.breadcrumb-container{
+  margin-top: 20px;
+  padding-left: 15%;
+  margin-bottom: 20px;
+}
+.tilmelding-container{
+  padding-left: 15%;
+  padding-right: 15%;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+.image-carousel-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tilmelding-hold-info-container{
+    width: 50%;
+    padding-left: 30px;
+}
+.hold-title{
+    margin: 0;
+}
+.kategori-titel{
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+.hold-detaljer {
+  margin-top: 50px;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+  }
+.holdinfo-title p{
+    margin: 0;
+}
+.holdinfo-content p{
+    margin: 0;
+}
+  
+  .holdinfo-item {
+    display: flex; 
+    margin-bottom: 10px;
+  } 
+  .holdinfo-title {
+    width: 80px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .holdinfo-content {
+    width: 500px;
+  }
+  .hold-info-container{
+    background-color: var(--light-background-color);
+    border-radius: 15px;
+    box-shadow: var(--text-shadow);
+    padding: 18px;
+    margin-bottom: 10px;
+  }
+
+  .tilmelding-formular-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .input-container {
+    display: grid;
+  width: fit-content;
+  grid-template-columns: 1fr 1fr; /* Updated to two columns */
+  gap: 10px;
+  width: 100%;
+ margin-bottom: 20px;
+ margin-top: 20px;
+  }
+  
+
+  .tilmelding-input{
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 9px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+  
+  .checkbox-label {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.5);
+  }
+  .payment-titel h5{
+    margin-bottom: 10px;
+  }
+  .payment-options-container {
+    background-color: white;
+    box-shadow: var(--text-shadow);
+    height: 100px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .hold-cta-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .hold-cta-buttons span{
+    margin-right: 10px;
+  }
+  .payment-titel{
+    margin: 20px 0 0 0;
+  }
+  .payment-options-container .mp-image{
+    width: 50px;
+    height: auto;
+    padding-right: 10px;
+  }
+  .payment-options-container .cc-image{
+    width: auto;
+    height: 45px;
+    padding-right: 10px;
+  }
+  .mobilepay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+    padding-right: 20px;
+    border-right: 2px solid rgba(0, 0, 0, 0.1);
+
+  }
+  .creditcards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: fit-content;
+  }
+
+  .detailed-description{
+    height: fit-content;
+    background-color: var(--light-background-color);
+    border-radius: 60px 60px 0 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-bottom: 100px;
+  }
+  .detailed-description-coloum-1{
+    padding-left: 30%;
+    padding-top: 30px;
+    padding-right: 32px;
+  }
+  .detailed-description-coloum-2{
+    padding-right: 30%;
+    padding-left: 32px;
+    padding-top: 30px;
+  }
+  .description-component{
+    margin-top: 50px;
+  }
+  .description-component h3{
+    margin-bottom: 30px;
+  }
+  .dokument{
+    color: var(--link-color);
+  }
+  .dokument:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .employee-img {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .employee-img img {
+    width: auto;
+    height: 100%; /* Adjusted height to fit within the container */
+  }
+  
+  .employee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .employee-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 20px; /* Adjust the gap between employees */
+  }
+  .aabningstider-list {
+    padding-inline-start:0;
+    list-style: none;
+    margin: 0;
+    padding: 20px 32px 20px 32px;
+    border: 2px solid  var(--secondary-color);
+    border-radius: 15px;
+    width: 50%;
+    
+  }
+  
+  .aabningstider-list li {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5px;
+  }
+  
+  .aabningstider-list li .dag {
+    flex-basis: 60%;
+    font-weight: bold;
+  }
+  .lektionsplan{
+    background-color: var(--primary-color);
+    padding: 32px;
+    border-radius: 15px;
+    box-shadow: var(--text-shadow);
+  }
+.mangler{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color);
+  height: 80vh;
+}
+  @media(max-width: 1024px) {
+    .aabningstider-list {
+      width: 80%;
+      
+    }
+    .employee-container {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    .video-component{
+      display: none;
+    }
+    .detailed-description-coloum-1{
+      width: 80%;
+      padding-left: 32px;
+      padding-top: 30px;
+      padding-right: 32px;
+    }
+    .detailed-description-coloum-2{
+      padding-right: 32px;
+      padding-left: 32px;
+      padding-top: 30px;
+    }
+    
+  .detailed-description{
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 30px;
+    padding-bottom: 100px;
+  }
+    .payment-options-container .cc-image{
+      margin-bottom: 5px;
+    }
+    .payment-options-container {
+      width: 90%;
+      padding: 20px;
+      display: flex;
+    }
+    .mobilepay{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      padding-right: 20px;
+      border-right: none;
+    }
+    .creditcards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: fit-content;
+    }
+
+
+    .breadcrumb-item a {
+      font-size: 14px;
+    }  
+    .breadcrumb-item.active {
+      color: var(--text-color);
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .breadcrumb-container{
+      padding-left: 16px;
+    }
+    .tilmelding-container{
+      padding-left: 16px;
+      padding-right: 16px;
+      width: 95%;
+    }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .mobilepay{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-right: 20px;
+      border-right: none;
+    }
+    .creditcards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .payment-options-container {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+    }
+    .tilmelding-hold-info-container{
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+    }
+    .tilmelding-container{
+      flex-direction: column;
+      padding-left: 16px;
+      padding-right: 16px;
+        width: 100%;
+  }
+  .hold-cta-buttons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 20px;
+  }
+    .aabningstider-list {
+      width: 80%;
+      
+    }
+    .employee-container {
+      grid-template-columns: repeat(1, 1fr);
+
+    }
+    .video-component{
+      display: none;
+    }
+    .detailed-description-coloum-1{
+      padding-top: 30px;
+    }
+    .detailed-description-coloum-2{
+      padding-top: 30px;
+    }
+    
+  .detailed-description{
+    width: 90%;
+    padding-left: 16px;
+    padding-right: 16px;
+    grid-template-columns: repeat(1,1fr);
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+    .payment-options-container .cc-image{
+      margin-bottom: 5px;
+    }
+    .payment-options-container {
+      width: fit-content;
+      padding: 20px;
+      display: flex;
+    }
+    .mobilepay{
+      display: flex;
+      flex-direction: column;
+      width: fit-content;
+      padding-right: 20px;
+      border-right: none;
+    }
+    .creditcards{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      width: fit-content;
+    }
+
+
+    .breadcrumb-item a {
+      font-size: 14px;
+    }  
+    .breadcrumb-item.active {
+      color: var(--text-color);
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .breadcrumb-container{
+      padding-left: 16px;
+    }
+    .tilmelding-container{
+      padding-left: 16px;
+      padding-right: 16px;
+        width: 90%;
+    }
+  }
+  
+  @media only screen and (max-width: 350px) {
+      
+  }

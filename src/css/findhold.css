@@ -1,0 +1,24 @@
+.searchbar-container-findhold{
+    padding-top: 30px;
+}
+
+.HoldSlides_2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+  }
+  .buttons-container-findhold{
+    display: flex;
+    justify-content: center;
+  }
+  .button-afdelinger-findhold{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .section-title-findhold{
+    text-align: left;
+    padding-left: 6px;
+  }

@@ -1,0 +1,148 @@
+/* HoldSlides.css */
+
+/* Styling for the entire slider container */
+.HoldSlides_banner {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+
+  }
+  /* Styling for the carousel thumbnails */
+  .carousel-thumbnail  {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 20px; /* Add bottom margin between rows */
+  }
+  
+  /* Styling for the thumbnail images */
+  .carousel-thumbnail_banner {
+    width: 99%;
+    height: 600px;
+    object-fit: fill;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    
+    
+  }
+
+  /* Styling for the image titles */
+  .image-title-banner{
+    position: absolute;
+    top: 45%; /* Position the title vertically at 50% from the top */
+    left: 50%; /* Position the title horizontally at 50% from the left */
+    transform: translate(-50%, -50%); /* Adjust to center both horizontally and vertically */
+    width: fit-content;
+    background-color: var(--light-background-color);
+    color: var(--text-color);
+    text-shadow: var(--text-shadow); 
+    padding: 20px 15px 20px 15px;
+    border-radius: 9px;
+    margin: 0 auto;
+    text-align: center;
+
+  }
+  .image-button{
+    position: absolute;
+    top: 60%; /* Position the title vertically at 50% from the top */
+    left: 50%; /* Position the title horizontally at 50% from the left */
+    transform: translate(-50%, -50%); 
+  }
+  .image-button:hover{
+        position: absolute;
+        top: 60%; /* Position the title vertically at 50% from the top */
+        left: 50%; /* Position the title horizontally at 50% from the left */
+        transform: translate(-50%, -50%) scale(1.1); 
+  }
+
+ /* Initially hide the arrows */
+
+.react-multiple-carousel__arrow--left,
+.react-multiple-carousel__arrow--right {
+  margin-top: -70px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  border-radius: 0; /* Add a smooth transition effect */
+}
+.react-multiple-carousel__arrow--left{
+  margin-left: -65px;
+}
+.react-multiple-carousel__arrow--left:hover{
+  margin-left: -65px;
+}
+.react-multiple-carousel__arrow--right{
+    margin-right: -65px;
+  }
+  .react-multiple-carousel__arrow--right:hover{
+    margin-right: -65px;
+  }
+
+ 
+
+.react-multiple-carousel__arrow{
+    height: 100%;
+    width: 200px;
+    box-shadow: none;
+}
+.react-multiple-carousel__arrow:hover{
+  background-color: transparent;
+  box-shadow: none;
+}
+/* Styling the dots container */
+.react-multi-carousel-dot-list {
+  margin: 0; /* Adjust margin as needed */
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+/* Styling the dots */
+.react-multi-carousel-dot button {
+  width: 8px; /* Adjust dot size */
+  height: 8px; /* Adjust dot size */
+  margin: 0 8px; /* Adjust margin between dots */
+  border-radius: 50%;
+  border: transparent; /* Dot border color */
+  background-color: #B3B3B3; /* Dot background color */
+}
+
+/* Styling the active dot */
+.react-multi-carousel-dot--active button {
+  background-color: var(--primary-color); /* Active dot color */
+}
+
+
+/* Styling for the notification */
+.notification_banner {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    padding: 10px 15px;
+    border-radius: 9px;
+    font-size: var(--h6-size);
+    z-index: 1;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    font-family: var(--text-font-family);
+  }
+
+  @media(max-width: 1024px) {
+    .react-multiple-carousel__arrow--left,
+    .react-multiple-carousel__arrow--right {
+     display: none;
+
+    } 
+    .HoldSlides {
+      width: 80%;
+    }
+  }
+  @media only screen and (max-width: 540px) {
+    .carousel-thumbnail_banner {
+        height: 300px;
+      }
+      .image-title-banner{
+        font-size: var(--h5-size);
+      }
+  }

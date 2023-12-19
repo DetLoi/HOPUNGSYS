@@ -1,0 +1,35 @@
+/* Breadcrumb.css */
+.breadcrumb {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  .breadcrumb-item:not(.active) {
+    margin-right: 5px;
+  }
+  
+  .breadcrumb-item:not(.active)::after {
+    content: '>';
+    margin-left: 5px;
+    color: gray;
+  }
+  
+  .breadcrumb-item a {
+    color: var(--text-color) ;
+    text-decoration: none;
+  }
+
+   .breadcrumb-item a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: var(--text-color);
+    font-size: var(--h5-size);
+    font-weight: bold;
+  }
+
+  

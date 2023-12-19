@@ -1,0 +1,204 @@
+.KlubberSlides {
+    background-color: var(--primary-color); /* Orange background color */
+    padding: 20px;
+    padding-bottom: 150px;
+    padding-top: 30px;
+    padding-left: 20%;
+    padding-right: 20%;
+    position: relative;
+  }
+  .klubwave {
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.klubwave svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 100px;
+}
+.klubber-animation{
+  animation: fadeInLeft 2s;
+}
+.klubwave .shape-fill-klubwave {
+    fill: var(--background-color);
+}
+  .custom-shape-divider-bottom-1702133278 {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1702133278 svg {
+    position: relative;
+    width: calc(128% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1702133278 .shape-fill {
+    fill: var(--background-color);
+}
+  
+  .section-title-klubber {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px; /* Adjust spacing as needed */
+    color: var(--light-text-color); /* Adjust color as needed */
+  }
+  
+  .klub-circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Adjust the space between clubs */
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .klub-circle {
+    width: 300px; /* Adjust the width and height of each circle */
+    height: 300px;
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px; /* Adjust the space between circles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    position: relative; /* Position for the background image */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .klub-circle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit; /* Inherit the circle's border-radius */
+    opacity: 1; /* Adjust the opacity of the overlay */
+    z-index: 1; /* Ensure the overlay is behind the text */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .klub-circle:nth-child(1)::before {
+    background-image: url('../images/klub1.jpg'); /* Image for the first circle */
+  }
+  
+  .klub-circle:nth-child(2)::before {
+    background-image: url('../images/klub2.jpg'); /* Image for the second circle */
+  }
+  
+  .klub-circle:nth-child(3)::before {
+    background-image: url('../images/klub3.png'); /* Image for the third circle */
+  }
+  .klub-circle:nth-child(4)::before {
+    background-image: url('../images/klub4.jpg'); /* Image for the first circle */
+  }
+  
+  .klub-circle:nth-child(5)::before {
+    background-image: url('../images/klub5.jpg'); /* Image for the second circle */
+  }
+  
+  .klub-circle:nth-child(6)::before {
+    background-image: url('../images/klub6.jpeg'); /* Image for the third circle */
+  }
+
+  .klub-circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--secondary-color); /* Black with 0.9 opacity */
+    opacity: 0.9; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Transition effect for opacity */
+    z-index: 2; /* Place the black and white overlay above the image */
+  }
+
+  .klub-circle:nth-child(even)::after {
+  background-color: var(--background-color); /* White with 0.9 opacity */
+}
+
+  
+  
+
+  .klub-circle:nth-child(odd) .image-title-klub {
+    color: var(--white); /* Title text color for black circles */
+  }
+  
+  .klub-circle:nth-child(even) .image-title-klub {
+    color: var(--text-color); /* Title text color for white circle */
+  }
+  
+  .image-title-klub { /* Ensure the text is above the overlay */
+    z-index: 3; /* Place the text above the overlay */
+  }
+  
+  .klub-circles.rotated {
+    transform: rotate(-120deg); /* Adjust the rotation for circular layout */
+  }
+  
+  .klub-circles.rotated .klub-circle:nth-child(1) {
+    transform: rotate(0deg) translateY(-100px) rotate(0deg); /* Adjust positioning */
+  }
+  
+  .klub-circles.rotated .klub-circle:nth-child(2) {
+    transform: rotate(120deg) translateY(-100px) rotate(-120deg); /* Adjust positioning */
+  }
+  
+  .klub-circles.rotated .klub-circle:nth-child(3) {
+    transform: rotate(240deg) translateY(-100px) rotate(-240deg); /* Adjust positioning */
+  }
+
+.klub-circle {
+    position: relative;
+  }
+  
+  .klub-button {
+    position: absolute;
+    bottom: 50px; /* Adjust the distance from the bottom */
+    left: 50%; /* Align the button to the center */
+    transform: translateX(-50%); /* Adjust to horizontally center */
+    z-index: 99;
+  }
+  
+  .klub-button:hover {
+    position: absolute;
+    bottom: 50px; /* Adjust the distance from the bottom */
+    left: 50%; /* Align the button to the center */
+    transform: translateX(-50%) scale(1.1); /* Adjust to horizontally center */
+  }
+  @media(max-width: 1024px) {
+    .klub-circles {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  .KlubberSlides {
+    margin-bottom: 50px;
+  }
+  }
+  
+  @media only screen and (max-width: 540px) {
+    .klub-circles {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .custom-shape-divider-bottom-1702133278 svg {
+      height: 50px;
+  }  
+
+  }

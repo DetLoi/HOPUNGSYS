@@ -1,0 +1,93 @@
+/* Searchbar.css */
+
+/* Searchbar container */
+.searchbar {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px; /* Adjust top margin as needed */
+    background-color: transparent;
+    z-index: 1;
+    padding-bottom: 20px;
+}
+.custom-shape-divider-bottom-1702134035 {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1702134035 svg {
+    position: relative;
+    display: block;
+    width: calc(280% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1702134035 .shape-fill {
+    fill: var(--background-color);
+}
+
+/* Search container */
+.search-container {
+    position: relative;
+    width: 70%; /* Adjust the width as needed */
+    border: 6px solid var(--primary-color); /* Border color */
+    border-radius: 9px; /* Rounded corners */
+    z-index: 2;
+}
+.searchbar-findhold{
+    width: 40%;
+}
+
+/* Search icon */
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust icon size */
+    height: auto;
+}
+
+/* Search input */
+.search-input {
+    width: calc(100% - 80px); 
+    padding: 15px 40px 15px 40px; /* Adjust padding as needed */
+    border: none;
+    outline: none;
+    font-size: var(--paragraph-font-size);
+    border-radius: 3px; /* Match the border radius of the container */
+}
+
+/* Placeholder text color */
+.search-input::placeholder {
+    color: var(--text-color);
+}
+@media(max-width: 1024px) {
+    
+    .search-container {
+        width: 90%; /* Adjust the width as needed */
+    
+    }
+    .searchbar {
+        margin-top: -50px; /* Adjust top margin as needed */
+
+    }
+    .custom-shape-divider-bottom-1702134035 {
+        bottom: 20px;
+       
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .custom-shape-divider-bottom-1702134035 {
+        bottom: -40px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+}
